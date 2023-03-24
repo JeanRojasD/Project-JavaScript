@@ -1,9 +1,11 @@
-import Menu from "../../components/Menu/menu"
+import Menu from "../../components/Menu/menu";
 
-import remove from '../../assets/images/remove.png'
-import edit from '../../assets/images/edit.png'
+import remove from "../../assets/images/remove.png";
+import edit from "../../assets/images/edit.png";
 
-import './orders.scss'
+import orders from "../../assets/data/orders.json";
+
+import "./orders.scss";
 
 const Orders = () => {
   return (
@@ -11,20 +13,24 @@ const Orders = () => {
       <Menu />
       <div className="table-content">
         <table>
-          <tr>
-            <th>Pedido</th>
-            <th>Usuario</th>
-            <th>Status</th>
-            <th>Editar</th>
-            <th>Remover</th>
-          </tr>
-          <tr>
-            <td>Batmovel</td>
-            <td>Bruce Wayne</td>
-            <td>Pendente</td>
-            <td><img src={edit} className="icons" alt="edit"></img></td>
-            <td><img src={remove} className="icons" alt="remove"></img></td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>Pedido</th>
+              <th>Usuario</th>
+              <th>Status</th>
+              <th>Editar</th>
+              <th>Remover</th>
+            </tr>
+            {orders.map((content) => (
+              <tr key={content.id}>
+                <td>{content.order}</td>
+                <td>{content.user.name}</td>
+                <td>{content.status ? 'Entregue' : 'Pendente'}</td>
+                <td><img src={edit} className="icons" alt="edit"></img></td>
+                <td><img src={remove} className="icons" alt="remove"></img></td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
     </div>
