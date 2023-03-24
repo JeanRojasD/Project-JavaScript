@@ -1,0 +1,23 @@
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #363732;
+    box-shadow: -2px 5px 10px 0px rgba(0,0,0,0.51);
+    padding: 10px;
+
+    p{
+        color: #1be09f;
+    }
+
+    nav ul{
+        display: flex;
+
+        li{
+            padding: 10px;
+            color: #EFE9F4;
+        }
+    }
+
+}
