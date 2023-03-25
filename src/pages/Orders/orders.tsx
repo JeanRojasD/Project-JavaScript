@@ -26,8 +26,8 @@ const Orders = () => {
                 <td>{content.order}</td>
                 <td>{content.user.name}</td>
                 <td>{content.status ? 'Entregue' : 'Pendente'}</td>
-                <td><img src={edit} className="icons" alt="edit"></img></td>
-                <td><img src={remove} className="icons" alt="remove"></img></td>
+                <td className="icons-align"><img src={edit} className="icons" alt="edit"></img></td>
+                <td className="icons-align"><img src={remove} className="icons" alt="remove"></img></td>
               </tr>
             ))}
           </tbody>

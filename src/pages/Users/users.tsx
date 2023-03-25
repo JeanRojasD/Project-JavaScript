@@ -26,8 +26,8 @@ const Users = () => {
                         <td>{content.name}</td>
                         <td>{content.email}</td>
                         <td>{content.status ? 'Ativado' : 'Desativado'}</td>
-                        <td><img src={edit} className="icons" alt="edit"></img></td>
-                        <td><img src={remove} className="icons" alt="remove"></img></td>
+                        <td className="icons-align"><img src={edit} className="icons" alt="edit"></img></td>
+                        <td className="icons-align"><img src={remove} className="icons" alt="remove"></img></td>
                     </tr>
                 ))}
             </tbody>
