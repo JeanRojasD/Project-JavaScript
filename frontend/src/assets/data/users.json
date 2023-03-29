@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Bruce Wayne",
+        "email": "bruce@wayneindustries.com",
+        "status": true
+    },
+    {
+        "id": 2,
+        "name": "Clark Kent",
+        "email": "clark.kent@dailyplanet.com",
+        "status": true
+    },
+    {
+        "id": 3,
+        "name": "Barry Allen",
+        "email": "barry.alen@starindustries.com",
+        "status": false
+    }
+]
