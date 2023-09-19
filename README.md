@@ -1,4 +1,4 @@
-# Saito's project
+# Project JavaScript
 
  Saito's project is a simple web application built using React that allows users to manage their orders and customers. The backend is powered by PocketBase, a cloud-hosted NoSQL database service.
 
